@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+:root {
+  --myBackroundColor: #1a192e;
+}
+
+nav {
+  background-color: #1a192e;
+  color: white;
+}
+.nav-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1300px;
+  /* background-color: brown; */
+}
+ul {
+  display: flex;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  margin: 0 20px;
+  list-style: none;
+}
+
+/* ini bagian main */
+
+main {
+  background-color: red;
+}
+.main-container {
+  width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  background-color: var(--myBackroundColor);
+}
+.main-logo {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-logo img {
+  width: 350px;
+}
+
+.main-about {
+  color: white;
+}
+
+.btn-main button {
+  padding: 5px 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/* ini section */
+
+section {
+  background-color: blue;
+}
+
+.section-container {
+  margin: 0 auto;
+  width: 1300px;
+  background-color: var(--myBackroundColor);
+}
+
+.sec-text h2 {
+  text-align: center;
+}
+.card-container {
+  display: flex;
+  gap: 10px;
+}
+
+.card {
+  width: 200px;
+  height: auto;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(102%);
+  -webkit-transform: scale(102%);
+  -moz-transform: scale(102%);
+  -ms-transform: scale(102%);
+  -o-transform: scale(102%);
+}
+.card img {
+  width: 200px;
+}
+
+/* ini mobile responsive */
+@media (max-width: 400px) {
+  nav {
+    background-color: black;
+  }
+}
